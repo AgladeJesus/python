@@ -7,5 +7,5 @@ print('Trabuada de {}'.format(a))
 print('*' * 18)
 
 while (aux <= 10):
-    print('{} X {} = {}'.format(aux, a, (aux * a)))
+    print('{} X {} = {}'.format(a, aux, (a * aux)))
     aux = aux + 1
