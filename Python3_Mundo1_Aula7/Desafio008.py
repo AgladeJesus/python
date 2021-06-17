@@ -1,8 +1,14 @@
-a = int(input('Digite uma medida em metros: '))
+m = int(input('Digite uma medida em metros: '))
 
-b = a * 100
-c = a * 1000
+km = m / 1000
+hm = m / 100
+dam = m / 10
+dm = m * 10
+cm = m * 100
+mm = m * 1000
 
-print('A medida informarda foi: {}m, \nConvertendo essa medida para centimetros é: {}cm,\nConvertendo essa medida para milimetros é: {}mm'. format(a, b, c))
-
+print('=' * 40)
+print('SEGUE ABAIXO RESULTADO DA CONVERSÃO')
+print('=' * 40)
+print('KM: {} \nHM: {} \nDAM: {} \nM: {} \nDM: {} \nCM: {} \nMM: {} \n'.format(km, hm, dam, m, dm, cm, mm))
 
