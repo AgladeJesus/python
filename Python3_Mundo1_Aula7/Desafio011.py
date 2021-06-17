@@ -1,13 +1,14 @@
 larg = float(input('Digite a largura da Parede a ser pintada: '))
 alt = float(input('Digite a altura da parede a ser pintada: '))
-lt = float(2)
-res = float(((larg*alt) / lt))
+area = larg * alt
+lt = 2
+tinta = area / lt
 
 print('=' * 50)
 print('CALCULO DE TINTA À SER USADA PARA PINTURA DE PAREDE')
 print('=' * 50)
-print('Largura: {}'.format(larg))
-print('Altura: {}'.format(alt))
-print('Aréa total: {}'.format(larg * alt))
-print('Será necessario de: {} litros de tinta'.format(res))
+print('Largura: {}m'.format(larg))
+print('Altura: {}m'.format(alt))
+print('Aréa total: {}m²'.format(area))
+print('Será necessario de: {} litros de tinta'.format(tinta))
 print('=' * 20)
