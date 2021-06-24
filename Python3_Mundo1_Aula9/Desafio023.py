@@ -1,7 +1,10 @@
 nm = int(input('Digite um número: '))
-n = str(nm)
+u = nm // 1 % 10
+d = nm // 10 % 10
+c = nm // 100 % 10
+m = nm // 1000 % 10
 print('Analisando o número {}'.format(nm))
-print('Unidade: {}'.format(n[3]))
-print('Dezena: {}'.format(n[2]))
-print('Centena: {}'.format(n[1]))
-print('Milhar: {}'.format(n[0]))
+print('Unidade: {}'.format(u))
+print('Dezena: {}'.format(d))
+print('Centena: {}'.format(c))
+print('Milhar: {}'.format(m))
