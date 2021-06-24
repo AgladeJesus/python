@@ -9,4 +9,4 @@ print('Senhor' in frase)
 print(frase.lower().find('senhor'))
 div = frase.split()
 
-print(div[0][:13])
+print(div[1][:16])
