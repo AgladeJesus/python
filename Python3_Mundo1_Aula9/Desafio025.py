@@ -1,2 +1,2 @@
-nome = str(input('Qual seu nome: ')).strip()
-print('Seu nome tem Jesus? {}'.format('jesus' in nome.lower()))
+nome = str(input('Qual seu nome: ')).strip().upper()
+print('Seu nome tem Jesus? {}'.format('JESUS' in nome))
