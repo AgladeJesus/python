@@ -8,10 +8,12 @@ print('-=-' * 20)
 nm = int(input('Em qual número eu pensei? '))
 print('PROCESSANDO...')
 sleep(2)
-if nm == rdpc:
-    print('PARABÉNS, VOCÊ ACETOU!')
+if nm <= rdpc:
+    if nm == rdpc:
+        print('PARABÉNS, VOCÊ ACETOU!')
+    else:
+        print('GANHEI! O número que eu pensei foi {} e não o {}'.format(rdpc, nm))
 else:
-    print('TENTE NOVAMENTE, O NÚMERO NÃO É ESSE.')
+    print('O número que você digitou foi {}, e não está no intervalo de 0 a 5, conforme proposto.'.format(nm))
 
-print(rdpc)
 
