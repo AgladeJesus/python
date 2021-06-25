@@ -1,8 +1,13 @@
 from random import randint
+from time import sleep
 
 rdpc = randint(0, 5)
-nm = int(input('Adivinhe qual número que o PC pensou: '))
-
+print('-=-' * 20)
+print('Vou pensar em um número entre 0 e 5. Tente descobrir...')
+print('-=-' * 20)
+nm = int(input('Em qual número eu pensei? '))
+print('PROCESSANDO...')
+sleep(2)
 if nm == rdpc:
     print('PARABÉNS, VOCÊ ACETOU!')
 else:
