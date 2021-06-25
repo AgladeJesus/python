@@ -1,6 +1,6 @@
-import random
+from random import randrange
 
-rdpc = random.randrange(0, 5)
+rdpc = randrange(0, 5)
 nm = int(input('Adivinhe qual número que o PC pensou: '))
 
 if nm == rdpc:
