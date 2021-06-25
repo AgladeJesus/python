@@ -8,7 +8,7 @@ print('-=-' * 20)
 nm = int(input('Em qual número eu pensei? '))
 print('PROCESSANDO...')
 sleep(2)
-if nm <= rdpc:
+if nm <= 5:
     if nm == rdpc:
         print('PARABÉNS, VOCÊ ACETOU!')
     else:
