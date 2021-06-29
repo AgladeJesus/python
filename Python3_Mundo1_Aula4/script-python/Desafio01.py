@@ -1,2 +1,2 @@
-nome = input('Qual seu nome: ')
-print('Olá {}{}{}! Prazer em te conhecer!'.format( \033[4;30m, nome, \033[m))
+nome = 'Jesus Cristo! O filho de Deus.'
+print('Olá {}{}! Prazer em te{} conhecer!'.format('\033[7;35;43m', nome, '\033[m'))
