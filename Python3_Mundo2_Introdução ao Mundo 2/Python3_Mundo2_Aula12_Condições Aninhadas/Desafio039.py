@@ -5,10 +5,12 @@ anoNasc = int(input('Digite o ano do seu Nascimento: '))
 ano = date.today().year
 idade = ano - anoNasc
 
+
+print('Idade atual: {} anos'.format(idade))
 if idade < 18:
-    print('Quando completar 18 anos, procure os serviços de alistamento militar')
+    print('Falta {} anos, para o alistamento militar'.format(18 - idade))
 elif idade == 18:
-    print('Você pode se alistar')
+    print('Apresente-se imediatamente aos postos de alistamento militar.')
 else:
-    print('Apresente-se aos serviços militar para dar baixo, pois você passou o tempo de se alistar')
+    print('Apresente-se aos postos de alistamento militar, você está com {} anos de atraso para cumprir esse requisito.'.format(idade - 18))
 
