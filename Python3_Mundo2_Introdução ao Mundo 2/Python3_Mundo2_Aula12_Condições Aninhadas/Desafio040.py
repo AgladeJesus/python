@@ -6,7 +6,7 @@ nm1 = float(input('Digite a sua primeira nota: '))
 nm2 = float(input('Digite a sua segunda nota: '))
 
 media = (nm1+nm2)/2
-
+print('As notas do aluno são: {} e {}, resultando na seguinte média: {:.2f}'.format(nm1, nm2, media))
 if media < 5.0:
     print('REPROVADO')
 elif (media >= 5.0) and (media <= 6.9):
