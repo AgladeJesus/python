@@ -3,7 +3,11 @@ print('CONVERSÃO DE BASES NUMERICAS')
 print('-='*20)
 
 nm = int(input('Digite um número para ser convertido: '))
-base = int(input('Para qual base deseja converter: [1]Binária | [2]Octal | [3]Hexadecimal'))
+print('''Para qual base deseja converter: 
+[1] Binária
+[2]Octal
+[3]Hexadecimal''')
+base = int(input('Digite umas das opções acima: '))
 
 numBin = bin(nm)
 numOct = oct(nm)
