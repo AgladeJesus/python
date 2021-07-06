@@ -14,8 +14,8 @@ numOct = oct(nm)
 numHex = hex(nm)
 
 if base == 1:
-    print('Número binário é: {}'.format(numBin))
+    print('Número binário é: {}'.format(numBin [2:]))
 elif base == 2:
-    print('Númenro octal é: {}'.format(numOct))
+    print('Númenro octal é: {}'.format(numOct [2:]))
 else:
-    print('Númenro Hexadecimal é: {}'.format(numHex))
+    print('Númenro Hexadecimal é: {}'.format(numHex [2:]))
