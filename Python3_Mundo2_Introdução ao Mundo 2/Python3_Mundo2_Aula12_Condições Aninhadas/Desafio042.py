@@ -6,12 +6,14 @@ a = float(input('Primeito lado: '))
 b = float(input('Segundo lado: '))
 c = float(input('Terceiro lado: '))
 
-if (a + b < c) or (a + c < b) or (b + c < a):
-    print('Esses tamanhos não formam um triângulo.')
-elif ( a == b) and (a == c):
-    print('Triángulo Equilátero')
-elif (a == b) or (a == c) or (b ==c):
-    print('Triángulo Isósceles')
+if (a < b + c) and (b < a + c) and (c < a + b):
+    print('Os segmentos acima PODEM FORMAR um triângulo ', end='')
+    if a == b == c:
+        print('Equilátero')
+    elif a != b != c != a:
+        print('Escaleno')
+    else:
+        print('Isósceles')
 else:
-    print('Escaleno')
+    print('Os segmentos acima não PODEM FORMAR um triânglo.')
 
