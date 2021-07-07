@@ -5,7 +5,7 @@ print('-='*20)
 peso = float(input('Qual o seu peso: '))
 altura = float(input('Qual sua altura: '))
 
-imc = (peso / (altura * altura))
+imc = (peso / (altura ** 2))
 
 if imc < 18.5:
     print('MAGREZA COM IMC {:.2f}'.format(imc))
