@@ -22,7 +22,7 @@ if opção == 1:
         x = calc_peso_folha()
         qtdefls = int(input('Qtde de folhas: '))
         pesoTfls = x * qtdefls
-        print('O peso para essa quantidades de folhas de {:.2f} quilos'.format(pesoTfls))
+        print('O peso para essa quantidade de folhas é: {:.2f} quilos'.format(pesoTfls))
 else:
     print('Em Construção')
 
