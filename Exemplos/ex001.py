@@ -20,11 +20,11 @@ opção = int(input('O quer você deseja fazer: '))
 
 if opção == 1:
         x = calc_peso_folha()
-        print('O peso do papel é: {}'.format(x))
+        qtdefls = int(input('Qtde de folhas: '))
+        pesoTfls = x * qtdefls
+        print('O peso para essa quantidades de folhas de {:.2f} quilos'.format(pesoTfls))
 else:
     print('Em Construção')
-
-#print('Descrição: Papel {}, nas dimenssões {}mm x {}mm - {}g para quantidade: {} folhas.'.format(tipo, larg, comp, gram, qtdefls))
 
 
 
