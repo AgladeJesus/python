@@ -8,3 +8,4 @@ if inverso == junto:
     print('Temos um palíndromo!')
 else:
     print('A frase digitada não é um palíndromo')
+print('A frese digitada é {}, e o contrario foi {}'.format(junto, inverso))
