@@ -6,6 +6,6 @@ print('*' * 18)
 print('Trabuada de {}'.format(a))
 print('*' * 18)
 
-for aux in range(1, 10):
-    print('{} X {:2} = {:4}'.format(a, aux, (a * aux)))
+for aux in range(1, 11):
+    print('{} + {:2} = {:4}  === | === {} - {:2} = {:4} === | === {} X {:2} = {:4}  === | === {} / {:2} = {:.2f}'.format(a, aux, (a + aux), a, aux, (a - aux), a, aux, (a * aux), a, aux, (a / aux)))
     aux = aux + 1
