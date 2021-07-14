@@ -10,6 +10,7 @@ print('''
 [6] CALCULAR CHAPA ONDULADA
 [7] CALCULAR QTDE DE TINTA A SER USADA
 ''')
+
 def calc_peso_folha():
 
     peso = ((larg/1000)*(comp/1000)*(gram/1000))
@@ -36,12 +37,12 @@ if opção == 1:
     qtdePct = int(input('Qtde de folhas no pacote: '))
     qtdefls = int(input('Qtde de folhas: '))
 
+
+
+
     x = calc_peso_folha()
     y = calc_metroquadrado_folha()
     pesoTfls = x * qtdefls
-
-
-
 
     print('-=' * 20)
     print('RESUMO DAS INFORMAÇÕES')
