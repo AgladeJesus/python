@@ -7,6 +7,8 @@ print('''
 [3] CONVERTER FOLHAS PARA METRO LINEAR
 [4] CONVERTER QUILOS PARA METRO LINEAR
 [5] CALCULAR MICRO-ONDULADO FACE SIMPLES
+[6] CALCULAR CHAPA ONDULADA
+[7] CALCULAR QTDE DE TINTA A SER USADA
 ''')
 def calc_peso_folha():
 
@@ -21,6 +23,7 @@ def calc_metroquadrado_folha():
 
 opção = int(input('O quer você deseja fazer: '))
 
+
 if opção == 1:
     print('-='*20)
     print('CONVERTER FOLHAS PARA QUILLOS')
@@ -31,20 +34,23 @@ if opção == 1:
     gram = int(input('Gramatura: '))
     vlrPct = float(input('Valor do pacote: '))
     qtdePct = int(input('Qtde de folhas no pacote: '))
+    qtdefls = int(input('Qtde de folhas: '))
 
     x = calc_peso_folha()
-    #y = calc_metroquadrado_folha()
-
-    qtdefls = int(input('Qtde de folhas: '))
+    y = calc_metroquadrado_folha()
     pesoTfls = x * qtdefls
+
+
+
+
     print('-=' * 20)
     print('RESUMO DAS INFORMAÇÕES')
     print('-=' * 20)
-    print('Peso da folha: '.format(x))
-    #print('Area da folha em m²: '.format(y))
-    print('Preço unitário da folha: '.format(vlrPct / qtdePct))
-    print('Preço do quilos: '.format())
-    print('O peso para essa quantidade de folhas é: {:.2f} quilos'.format(pesoTfls))
+    print('Peso da folha: {} Kg'.format(x))
+    print('Área da folha: {} m²'.format(y))
+    print('Preço \033[36munitário da folha\033[m: R$ {:.4f}'.format(vlrPct / qtdePct))
+    print('Preço do \033[36mQUILO\033[m: R$ {:.4f}'.format(qtdefls*(vlrPct / qtdePct)/pesoTfls))
+    print('O \033[36mPESO\033[m para essa \033[36mquantidade de folhas\033[m é: {:.2f} Kg'.format(pesoTfls))
 else:
     print('Em Construção')
 
