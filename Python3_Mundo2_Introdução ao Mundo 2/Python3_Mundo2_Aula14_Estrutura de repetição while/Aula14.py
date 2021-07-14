@@ -1,6 +1,8 @@
 i = 0
-while i < 6:
+c = 'S'
+while i < 10:
   i += 1
-  if i == 3:
-    continue
+  c = str(input('Deseja continuar: [Y/N]: '))
+  if c == 'N':
+    break
 print(i)
