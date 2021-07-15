@@ -37,9 +37,6 @@ if opção == 1:
     qtdePct = int(input('Qtde de folhas no pacote: '))
     qtdefls = int(input('Qtde de folhas: '))
 
-
-
-
     x = calc_peso_folha()
     y = calc_metroquadrado_folha()
     pesoTfls = x * qtdefls
@@ -54,6 +51,3 @@ if opção == 1:
     print('O \033[36mPESO\033[m para essa \033[36mquantidade de folhas\033[m é: {:.2f} Kg'.format(pesoTfls))
 else:
     print('Em Construção')
-
-
-
