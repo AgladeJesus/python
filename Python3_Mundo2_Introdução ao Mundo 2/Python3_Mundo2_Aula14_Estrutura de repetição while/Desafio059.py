@@ -10,9 +10,7 @@ def menu():
 [ 3 ] maior
 [ 4 ] novos números
 [ 5 ] sair do programa''')
-
 opcao = 0
-
 while opcao != 5:
     menu()
     opcao = int(input('Qual a sua opção? '))
