@@ -1,3 +1,4 @@
+from time import sleep
 print('-='*20)
 print('SEQUÊNCIA DE FIBONACCI')
 print('-='*20)
@@ -13,3 +14,4 @@ while cont <= n:
     nm1 = nm2
     nm2 = nm3
     cont += 1
+    sleep(0.3)
