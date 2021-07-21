@@ -11,8 +11,9 @@ def menu():
 [ 4 ] novos números
 [ 5 ] sair do programa''')
 opcao = 0
+menu()
 while opcao != 5:
-    menu()
+    print('-='*20)
     opcao = int(input('Qual a sua opção? '))
     if opcao == 1:
         somar = nm1 + nm2
