@@ -2,11 +2,10 @@ print('*'*30)
 print('CALCULADORA DE PAPEL')
 print('*'*30)
 
-largFl = 0
-compFl = 0
-gram = 0
-vlrPct = 0
-vlrKg = 0
+largFl = int(input('Largura: '))
+compFl = int(input('Comprimento: '))
+gram = int(input('Gramatura: '))
+qtdaFls = 0
 
 def menu():
     print('''\033[31m
@@ -19,12 +18,15 @@ def menu():
 def calc_peso_folha():
     peso = ((largFl / 1000) * (compFl / 1000) * (gram / 1000))
     return peso
-
 def calc_metroquadrado_folha():
-    metroQfl = ((larg / 1000) * (comp / 1000))
+    metroQfl = ((largFl / 1000) * (compFl / 1000))
     return metroQfl
-
-
+def calc_peso_total():
+    pesoTotal = qtdeTotal() * calc_peso_folha()
+    return pesoTotal
+def qtdeTotal():
+    qtdefls = int(input('Quantidade Total: '))
+    return qtdefls
 
 menu()
 
@@ -36,32 +38,21 @@ while True:
         print('-=' * 20)
         print('PESO DA FOLHA')
         print('-=' * 20)
-        largFl = int(input('Largura: '))
-        compFl = int(input('Comprimento: '))
-        gram = int(input('Gramatura: '))
         print('\033[36mPeso da folha: {:.4f} Kg\033[m'.format(calc_peso_folha()))
         print('\033[36mÁrea da folha: {:.4f} m²\033[m'.format(calc_metroquadrado_folha()))
     elif opção == 2:
         print('-=' * 20)
         print('TOTAL EM PESO E M² PARA DETERMINADA QTDE DE FOLHAS')
         print('-=' * 20)
-        qtdefls = int(input('\033[32mQtde de folhas: \033[m'))
-        print(f'\033[32mO peso de uma folha é {calc_peso_folha():.4f} Kg, e o total para {qtdefls} folhas é {qtdefls*calc_peso_folha():.2f} kg\033[m')
-        print(f'\033[32mO m² de uma folha é {calc_metroquadrado_folha():.4f} m², e o total para {qtdefls} folhas é {qtdefls*calc_metroquadrado_folha():.2f} m²\033[m')
+        tfls = qtdeTotal()
+        #qtdefls = int(input('\033[32mQtde de folhas: \033[m'))
+        print(f'\033[32mO peso de uma folha é {calc_peso_folha():.4f} Kg, e o total para {tfls} folhas é {tfls*calc_peso_folha():.2f} kg\033[m')
+        print(f'\033[32mO m² de uma folha é {calc_metroquadrado_folha():.4f} m², e o total para {tfls} folhas é {tfls*calc_metroquadrado_folha():.2f} m²\033[m')
     elif opção == 3:
         larg = int(input('Largura: '))
         comp = int(input('Comprimento: '))
         gram = int(input('Gramatura: '))
     elif opção == 4:
-        vlrPct = float(input('Valor do pacote: '))
-        qtdePct = int(input('Qtde de folhas no pacote: '))
-        pesoTfls = x * qtdefls
-        print('-=' * 20)
-        print('RESUMO DAS INFORMAÇÕES')
-        print('-=' * 20)
-        print('Preço \033[36munitário da folha\033[m: R$ {:.4f}'.format(vlrPct / qtdePct))
-        print('Preço do \033[36mQUILO\033[m: R$ {:.4f}'.format(qtdefls * (vlrPct / qtdePct) / pesoTfls))
-        print('O \033[36mPESO\033[m para essa \033[36mquantidade de folhas\033[m é: {:.2f} Kg'.format(pesoTfls))
-        print('-=' * 20)
-        print('Em Construção')
+        print(f'Quantidade de folhas: {qtdeTotal()}')
+        print(f'Peso Total: {calc_peso_total():.2f} kg,')
 print('FIM DO PROGRAMA')
