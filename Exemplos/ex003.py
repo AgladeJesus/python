@@ -45,7 +45,6 @@ while True:
         print('TOTAL EM PESO E M² PARA DETERMINADA QTDE DE FOLHAS')
         print('-=' * 20)
         tfls = qtdeTotal()
-        #qtdefls = int(input('\033[32mQtde de folhas: \033[m'))
         print(f'\033[32mO peso de uma folha é {calc_peso_folha():.4f} Kg, e o total para {tfls} folhas é {tfls*calc_peso_folha():.2f} kg\033[m')
         print(f'\033[32mO m² de uma folha é {calc_metroquadrado_folha():.4f} m², e o total para {tfls} folhas é {tfls*calc_metroquadrado_folha():.2f} m²\033[m')
     elif opção == 3:
@@ -53,6 +52,7 @@ while True:
         comp = int(input('Comprimento: '))
         gram = int(input('Gramatura: '))
     elif opção == 4:
-        print(f'Quantidade de folhas: {qtdeTotal()}')
-        print(f'Peso Total: {calc_peso_total():.2f} kg,')
+        w = calc_peso_total()
+        print(f'Quantidade de folhas: {qtdaFls}')
+        print(f'Peso Total: {w:.2f} kg')
 print('FIM DO PROGRAMA')
