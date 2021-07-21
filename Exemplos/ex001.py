@@ -20,10 +20,9 @@ def calc_peso_folha():
     return peso
 
 def calc_metroquadrado_folha():
-
     metroQfl = ((larg / 1000) * (comp / 1000))
-
     return metroQfl
+
 while True:
     menu()
     opção = int(input('O quer você deseja fazer: '))
