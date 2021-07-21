@@ -4,6 +4,7 @@ def menu():
     print('CALCULADORA DE PAPEL')
     print('-='*20)
     print('''
+    [0] PARA SAIR DO PROGRAMA
     [1] CONVERTER FOLHAS PARA QUILLOS
     [2] CONVERTER QUILOS PARA FOLHAS
     [3] CONVERTER FOLHAS PARA METRO LINEAR
@@ -26,6 +27,8 @@ def calc_metroquadrado_folha():
 while True:
     menu()
     opção = int(input('O quer você deseja fazer: '))
+    if opção == 0:
+        break
     if opção == 1:
         print('-='*20)
         print('CONVERTER FOLHAS PARA QUILLOS')
@@ -53,3 +56,4 @@ while True:
         print('-=' * 20)
     else:
         print('Em Construção')
+print('FIM DO PROGRAMA')
