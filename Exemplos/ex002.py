@@ -22,8 +22,9 @@ larg = int(input('Largura: '))
 comp = int(input('Comprimento: '))
 gram = int(input('Gramatura: '))
 
+menu()
+
 while True:
-    menu()
     opção = int(input('Informe sua opção: '))
     if opção == 0:
         break
