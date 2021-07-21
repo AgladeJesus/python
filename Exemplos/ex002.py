@@ -24,7 +24,7 @@ gram = int(input('Gramatura: '))
 
 while True:
     menu()
-    opção = int(input('O quer você deseja fazer: '))
+    opção = int(input('Informe sua opção: '))
     if opção == 0:
         break
     if opção == 1:
