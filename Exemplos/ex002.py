@@ -8,7 +8,6 @@ def menu():
         [1] PESO DA FOLHA E ÁREA EM M².
         [2] TOTAL EM PESO E M² PARA DETERMINADA QTDE DE FOLHAS.
         [3] INFORMAR NOVO FORMATO.
-
     ''')
 
 def calc_peso_folha():
@@ -49,10 +48,6 @@ while True:
 
         vlrPct = float(input('Valor do pacote: '))
         qtdePct = int(input('Qtde de folhas no pacote: '))
-
-
-
-
         pesoTfls = x * qtdefls
 
         print('-=' * 20)
