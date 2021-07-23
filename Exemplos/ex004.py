@@ -64,10 +64,31 @@ while True:
             qtde = int(input('Qtde de sacola: '))
             totalP += qtde
             cont += 1
-        if lanç == 1:
-            print(f'Qtde de pacotes: {totalP / qtdePQ:.0f}\nPeso: {(totalP / qtdePQ) * pesoPQ:.2f} Kg\nQtde de Alças: {totalP*2} unid. Sendo {totalP/totalP:.0f} pct\nQtde de Fundo: {totalP} unid. Sendo {totalP/1000}\n')
+
+        if totalP < 7000:
+            if lanç == 1:
+                print(f'Qtde de pacotes: {totalP / qtdePQ:.0f}')
+                print(f'Peso: {(totalP / qtdePQ) * pesoPQ:.2f} Kg')
+                print(f'Qtde de Alças: {totalP*2} unid. Sendo {totalP/totalP:.0f} pct')
+                print(f'Qtde de Fundo: {totalP} unid. Sendo {totalP/1000:.0f} pct')
+            else:
+                print(f'Qtde total: {totalP}')
+                print(f'Qtde de pacotes: {totalP / qtdePQ:.0f}')
+                print(f'Peso: {(totalP / qtdePQ) * pesoPQ:.2f} Kg')
+                print(f'Qtde de Alças: {totalP*2} unid. Sendo {totalP/totalP:.0f} pct')
+                print(f'Qtde de Fundo: {totalP} unid. Sendo {totalP/1000:.0f} pct')
         else:
-            print(f'Qtde total: {totalP}\nQtde de pacotes: {totalP / qtdePQ:.0f}\nPeso: {(totalP / qtdePQ) * pesoPQ:.2f} Kg\nQtde de Alças: {totalP*2} unid. Sendo {totalP/totalP:.0f} pct\nQtde de Fundo: {totalP} unid. Sendo {totalP/1000:.0f} pct\n')
+            if lanç == 1:
+                print(f'Qtde de pacotes: {totalP / qtdePQ:.0f}')
+                print(f'Peso: {(totalP / qtdePQ) * pesoPQ:.2f} Kg')
+                print(f'Qtde de Alças: {totalP * 2} unid. Sendo {totalP / totalP:.0f} pct')
+                print(f'Qtde de Fundo: {totalP} unid. Sendo {totalP / 1000:.0f} pct')
+            else:
+                print(f'Qtde total: {totalP}')
+                print(f'Qtde de pacotes: {totalP / qtdePQ:.0f}')
+                print(f'Peso: {(totalP / qtdePQ) * pesoPQ:.2f} Kg')
+                print(f'Qtde de Alças: {totalP * 2} unid. Sendo {totalP / totalP:.0f} pct')
+                print(f'Qtde de Fundo: {totalP} unid. Sendo {totalP / 1000:.0f} pct')
     elif tipo == 2:
         print('SL PEQ ROSA SDL')
         os = int(input('Nº OS: '))
