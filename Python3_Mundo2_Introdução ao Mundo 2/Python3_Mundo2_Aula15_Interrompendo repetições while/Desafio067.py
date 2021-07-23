@@ -10,4 +10,3 @@ while True:
     while cont <= 10:
         print(f'{nm1} x {cont} = {nm1*cont}')
         cont += 1
-        
