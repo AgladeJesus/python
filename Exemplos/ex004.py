@@ -45,15 +45,29 @@ qtdTotal = 0
 qtde = 0
 
 tipo_sacola()
+print('-='*25)
+print('SOLICITAÇÃO PARA FATURAMENTO')
+print('-='*25)
+cliente = str(input('Nome da Loja: '))
+print('-='*25)
 while True:
     tipo = int(input('Qual tipo de Sacola: '))
     if tipo == 0:
         break
     elif tipo == 1:
         print('SL PEQ PRETA SDL')
-        os = int(input('Nº OS: '))
-        qtde = int(input('Qtde de sacola: '))
-        print(f'Qtde de pacotes: {qtde/qtdePQ:.0f}\nPeso: {(qtde/qtdePQ)*pesoPQ} Kg\n')
+        totalP = 0
+        lanç = int(input('São quantas OS´s para esse pallet: '))
+        cont = 0
+        while cont < lanç:
+            os = int(input('Nº OS: '))
+            qtde = int(input('Qtde de sacola: '))
+            totalP += qtde
+            cont += 1
+        if lanç == 1:
+            print(f'Qtde de pacotes: {totalP / qtdePQ:.0f}\nPeso: {(totalP / qtdePQ) * pesoPQ:.2f} Kg\n')
+        else:
+            print(f'Qtde total: {totalP}\nQtde de pacotes: {totalP / qtdePQ:.0f}\nPeso: {(totalP / qtdePQ) * pesoPQ:.2f} Kg\n')
     elif tipo == 2:
         print('SL PEQ ROSA SDL')
         os = int(input('Nº OS: '))
