@@ -55,9 +55,9 @@ while True:
     if tipo == 0:
         break
     elif tipo == 1:
+        lanç = int(input('São quantas OS´s para esse pallet: '))
         print('SL PEQ PRETA SDL')
         totalP = 0
-        lanç = int(input('São quantas OS´s para esse pallet: '))
         cont = 0
         while cont < lanç:
             os = int(input('Nº OS: '))
@@ -67,7 +67,7 @@ while True:
         if lanç == 1:
             print(f'Qtde de pacotes: {totalP / qtdePQ:.0f}\nPeso: {(totalP / qtdePQ) * pesoPQ:.2f} Kg\nQtde de Alças: {totalP*2} unid. Sendo {totalP/totalP:.0f} pct\nQtde de Fundo: {totalP} unid. Sendo {totalP/1000}\n')
         else:
-            print(f'Qtde total: {totalP}\nQtde de pacotes: {totalP / qtdePQ:.0f}\nPeso: {(totalP / qtdePQ) * pesoPQ:.2f} Kg\nQtde de Alças: {totalP*2} unid. Sendo {totalP/totalP:.0f} pct\nQtde de Fundo: {totalP} unid. Sendo {totalP/1000}\n')
+            print(f'Qtde total: {totalP}\nQtde de pacotes: {totalP / qtdePQ:.0f}\nPeso: {(totalP / qtdePQ) * pesoPQ:.2f} Kg\nQtde de Alças: {totalP*2} unid. Sendo {totalP/totalP:.0f} pct\nQtde de Fundo: {totalP} unid. Sendo {totalP/1000:.0f} pct\n')
     elif tipo == 2:
         print('SL PEQ ROSA SDL')
         os = int(input('Nº OS: '))
