@@ -41,6 +41,9 @@ qtdeMD = 50
 qtdeGR = 100
 qtdeMC = 100
 
+qtdTotal = 0
+qtde = 0
+
 tipo_sacola()
 while True:
     tipo = int(input('Qual tipo de Sacola: '))
@@ -108,6 +111,9 @@ while True:
         os = int(input('Nº OS: '))
         qtde = int(input('Qtde de sacola: '))
         print(f'Qtde de pacotes: {qtde/qtdeGR:.0f}\nPeso: {(qtde/qtdeGR)*pesoGR} Kg\n')
+    qtdTotal += qtde
+print(f'Quatidade total de sacolas: {qtdTotal}')
+
 
 
 
