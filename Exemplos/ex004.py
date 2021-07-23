@@ -65,9 +65,9 @@ while True:
             totalP += qtde
             cont += 1
         if lanç == 1:
-            print(f'Qtde de pacotes: {totalP / qtdePQ:.0f}\nPeso: {(totalP / qtdePQ) * pesoPQ:.2f} Kg\n')
+            print(f'Qtde de pacotes: {totalP / qtdePQ:.0f}\nPeso: {(totalP / qtdePQ) * pesoPQ:.2f} Kg\nQtde de Alças: {totalP*2} unid. Sendo {totalP/totalP:.0f} pct\nQtde de Fundo: {totalP} unid. Sendo {totalP/1000}')
         else:
-            print(f'Qtde total: {totalP}\nQtde de pacotes: {totalP / qtdePQ:.0f}\nPeso: {(totalP / qtdePQ) * pesoPQ:.2f} Kg\n')
+            print(f'Qtde total: {totalP}\nQtde de pacotes: {totalP / qtdePQ:.0f}\nPeso: {(totalP / qtdePQ) * pesoPQ:.2f} Kg\nQtde de Alças: {totalP*2} unid. Sendo {totalP/totalP:.0f} pct\nQtde de Fundo: {totalP} unid. Sendo {totalP/1000}')
     elif tipo == 2:
         print('SL PEQ ROSA SDL')
         os = int(input('Nº OS: '))
