@@ -9,13 +9,8 @@ while True:
     sx = ' '
     while sx not in 'MF':
         sx = str(input('Sexo: [M/F]: ')).upper().strip()[0]
-    perg = str(input('Deseja continuar: [S/N]: ')).strip().upper()
-    if perg == 'S':
-        idade = 0
-        while idade <= 0:
-            idade = int(input('Idade: '))
-        sx = ' '
-        while sx not in 'MF':
-            sx = str(input('Sexo: [M/F]: ')).upper().strip()[0]
-    else:
+    perg = ' '
+    while perg not in 'SN'
+    perg = str(input('Deseja continuar: [S/N]: ')).strip().upper()[0]
+    if perg == 'N':
         break
