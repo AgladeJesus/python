@@ -53,7 +53,7 @@ print('-='*25)
 cliente = str(input('Nome da Loja: '))
 print('-='*25)
 while True:
-    tipo = int(input('Qual tipo de Sacola: '))
+    tipo = int(input('Qual modelo de Sacola: '))
     if tipo == 0:
         break
     elif tipo == 1:
@@ -72,10 +72,12 @@ while True:
             if lanç == 1:
                 # QTDE DE 6000 PARA BAIXO 1 PALLET, PARA UMA O.S UNICA:
                 print(f'Qtde de pacotes: {totalPedido / qtdePQ :.0f}')
+                print('\n')
             else:
                 # QTDE DE 6000 PARA BAIXO 1 PALLET, PARA MAIS DE UM O.S:
                 print(f'Qtde de sacolas: {totalPedido}')
                 print(f'Qtde de pacotes: {totalPedido / qtdePQ :.0f}')
+                print('\n')
 
     qtdTotal += qtde
 
