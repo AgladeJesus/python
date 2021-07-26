@@ -70,7 +70,7 @@ while True:
 
         if totalPedido <= 6000:
             if lanç == 1:
-                # QTDE DE 6000 PARA BAIXO, PARA UMA O.S UNICA:
+                # QTDE DE 6000 PARA BAIXO 1 PALLET, PARA UMA O.S UNICA:
                 print('Qtde de pacotes: {}')
     qtdTotal += qtde
 
