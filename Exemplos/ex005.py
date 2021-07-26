@@ -59,16 +59,17 @@ while True:
     elif tipo == 1:
         lanç = int(input('São quantas OS´s para esse pallet: '))
         print('SL PEQ PRETA SDL')
-        totalP = 0
+        totalPedido = 0
         cont = 0
         while cont < lanç:
             os = int(input('Nº OS: '))
             qtde = int(input('Qtde de sacola: '))
-            totalP += qtde
+            totalPedido += qtde
             cont += 1
 
-        if totalP <= 6000:
+        if totalPedido <= 6000:
             if lanç == 1:
-
+                # QTDE DE 6000 PARA BAIXO, PARA UMA O.S UNICA:
+                print('')
     qtdTotal += qtde
 print(f'Quatidade total de sacolas: {qtdTotal}')
