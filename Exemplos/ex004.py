@@ -65,8 +65,9 @@ while True:
             totalP += qtde
             cont += 1
 
-        if totalP < 7000:
+        if totalP <= 6000:
             if lanç == 1:
+                # 
                 print(f'Qtde de pacotes: {totalP / qtdePQ:.0f}')
                 print(f'Peso: {(totalP / qtdePQ) * pesoPQ:.2f} Kg')
                 print(f'Qtde de Alças: {totalP*2} unid. Sendo {totalP/totalP:.0f} pct')
@@ -79,16 +80,56 @@ while True:
                 print(f'Qtde de Fundo: {totalP} unid. Sendo {totalP/1000:.0f} pct')
         else:
             if lanç == 1:
-                print(f'Qtde de pacotes: {totalP / qtdePQ:.0f}')
-                print(f'Peso: {(totalP / qtdePQ) * pesoPQ:.2f} Kg')
-                print(f'Qtde de Alças: {totalP * 2} unid. Sendo {totalP / totalP:.0f} pct')
-                print(f'Qtde de Fundo: {totalP} unid. Sendo {totalP / 1000:.0f} pct')
+                print('=====PRIMEIRO PALLET=====')
+                print('Quantidade de pallets: 2')
+                print(f'Qtde de pacotes: {(totalP / qtdePQ)/2:.0f}')
+                print(f'Peso: {((totalP / qtdePQ) * pesoPQ)/2:.2f} Kg')
+                print(f'Qtde de Alças: {(totalP * 2)} unid. Sendo {totalP / totalP:.0f} pct')
+                print(f'Qtde de Fundo: {totalP/2} unid. Sendo {totalP / 1000:.0f} pct')
+
+                print('=====SEGUNDO PALLET PALLET=====')
+
+                print('Quantidade de pallets: 2')
+                print(f'Qtde de pacotes: {(totalP / qtdePQ)/2:.0f}')
+                print(f'Peso: {((totalP / qtdePQ) * pesoPQ)/2:.2f} Kg')
+                print(f'Qtde de Alças: {(totalP * 2)} unid. Sendo {totalP / totalP:.0f} pct')
+                print(f'Qtde de Fundo: {totalP/2} unid. Sendo {totalP / 1000:.0f} pct')
             else:
-                print(f'Qtde total: {totalP}')
-                print(f'Qtde de pacotes: {totalP / qtdePQ:.0f}')
-                print(f'Peso: {(totalP / qtdePQ) * pesoPQ:.2f} Kg')
-                print(f'Qtde de Alças: {totalP * 2} unid. Sendo {totalP / totalP:.0f} pct')
-                print(f'Qtde de Fundo: {totalP} unid. Sendo {totalP / 1000:.0f} pct')
+                if totalP % 500 == 0:
+                    ttparc1 = totalP/2
+                    print('=====PRIMEIRO PALLET=====')
+                    print(f'Quantidade: {ttparc1}')
+                    print(f'Qtde total: {totalP / 2}')
+                    print(f'Qtde de pacotes: {((totalP / qtdePQ) / 2) / 2:.0f}')
+                    print(f'Peso: {(((totalP / qtdePQ) * pesoPQ) / 2) / 2:.2f} Kg')
+                    print(f'Qtde de Alças: {(totalP * 2)} unid. Sendo {totalP / totalP:.0f} pct')
+                    print(f'Qtde de Fundo: {totalP / 2} unid. Sendo {totalP / 1000:.0f} pct')
+
+                    print('=====SEGUNDO PALLET PALLET=====')
+                    print(f'Quantidade: {ttparc1}')
+                    print(f'Qtde total: {totalP / 2}')
+                    print(f'Qtde de pacotes: {((totalP / qtdePQ) / 2) / 2:.0f}')
+                    print(f'Peso: {(((totalP / qtdePQ) * pesoPQ) / 2) / 2:.2f} Kg')
+                    print(f'Qtde de Alças: {(totalP * 2)} unid. Sendo {totalP / totalP:.0f} pct')
+                    print(f'Qtde de Fundo: {totalP / 2} unid. Sendo {totalP / 1000:.0f} pct')
+                else:
+                    ttparc2 = ((totalP-500)/2)+500
+                    print('=====PRIMEIRO PALLET=====')
+                    print(f'Quantidade: {ttparc1}')
+                    print(f'Qtde total: {totalP / 2}')
+                    print(f'Qtde de pacotes: {((totalP / qtdePQ) / 2) / 2:.0f}')
+                    print(f'Peso: {(((totalP / qtdePQ) * pesoPQ) / 2) / 2:.2f} Kg')
+                    print(f'Qtde de Alças: {(totalP * 2)} unid. Sendo {totalP / totalP:.0f} pct')
+                    print(f'Qtde de Fundo: {totalP / 2} unid. Sendo {totalP / 1000:.0f} pct')
+
+                    print('=====SEGUNDO PALLET PALLET=====')
+                    print(f'Quantidade: {ttparc2}')
+                    print(f'Qtde total: {totalP / 2}')
+                    print(f'Qtde de pacotes: {((totalP / qtdePQ) / 2) / 2:.0f}')
+                    print(f'Peso: {(((totalP / qtdePQ) * pesoPQ) / 2) / 2:.2f} Kg')
+                    print(f'Qtde de Alças: {(totalP * 2)} unid. Sendo {totalP / totalP:.0f} pct')
+                    print(f'Qtde de Fundo: {totalP / 2} unid. Sendo {totalP / 1000:.0f} pct')
+
     elif tipo == 2:
         print('SL PEQ ROSA SDL')
         os = int(input('Nº OS: '))
