@@ -60,6 +60,7 @@ while True:
         lanç = int(input('São quantas OS´s para esse pallet: '))
         print('SL PEQ PRETA SDL')
         totalPedido = 0
+        qtdePallets = 0
         cont = 0
         while cont < lanç:
             os = int(input('Nº OS: '))
@@ -70,6 +71,7 @@ while True:
         if totalPedido <= 6000:
             if lanç == 1:
                 # QTDE DE 6000 PARA BAIXO, PARA UMA O.S UNICA:
-                print('')
+                print('Qtde de pacotes: {}')
     qtdTotal += qtde
+
 print(f'Quatidade total de sacolas: {qtdTotal}')
