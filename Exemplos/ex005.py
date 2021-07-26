@@ -66,12 +66,17 @@ while True:
             os = int(input('Nº OS: '))
             qtde = int(input('Qtde de sacola: '))
             totalPedido += qtde
-            cont += 1
 
+            cont += 1
         if totalPedido <= 6000:
             if lanç == 1:
                 # QTDE DE 6000 PARA BAIXO 1 PALLET, PARA UMA O.S UNICA:
-                print('Qtde de pacotes: {}')
+                print(f'Qtde de pacotes: {totalPedido / qtdePQ :.0f}')
+            else:
+                # QTDE DE 6000 PARA BAIXO 1 PALLET, PARA MAIS DE UM O.S:
+                print(f'Qtde de sacolas: {totalPedido}')
+                print(f'Qtde de pacotes: {totalPedido / qtdePQ :.0f}')
+
     qtdTotal += qtde
 
 print(f'Quatidade total de sacolas: {qtdTotal}')
