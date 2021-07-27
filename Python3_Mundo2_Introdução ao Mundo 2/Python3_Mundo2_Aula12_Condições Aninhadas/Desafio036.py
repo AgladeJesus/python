@@ -10,7 +10,7 @@ qtdeParc = anosPag*12
 vlrParc = vlrCasa / qtdeParc
 percParc30 = sal * (30 / 100)
 
-print('Quantidades de Parcelas: {}, Valor da Parcela: {:.2f}, Percentual de 30% sobre a renda: {}'.format(qtdeParc, vlrParc, percParc30))
+print(f'Quantidades de Parcelas: R${qtdeParc:.2f}, Valor da Parcela: R${vlrParc:.2f}, Percentual de 30% sobre a renda: R${percParc30}')
 
 if vlrParc < percParc30:
     print('Parabéns! O seu empréstimo foi aprovado.')
