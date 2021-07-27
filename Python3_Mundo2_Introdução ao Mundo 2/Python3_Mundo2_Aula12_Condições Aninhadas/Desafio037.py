@@ -1,6 +1,6 @@
-print('-='*20)
-print('CONVERSÃO DE BASES NUMERICAS')
-print('-='*20)
+print('='*40)
+print('{:^40}'.format('CONVERSÃO DE BASES NUMERICAS'))
+print('='*40)
 
 nm = int(input('Digite um número para ser convertido: '))
 print('''Para qual base deseja converter: 
