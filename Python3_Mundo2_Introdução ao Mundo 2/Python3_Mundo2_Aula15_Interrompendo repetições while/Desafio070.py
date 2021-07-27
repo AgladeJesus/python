@@ -1,6 +1,4 @@
-print('-'*20)
-print('LOJA SUPER BARATÃO')
-print('-'*20)
+print('{:-^40}'.format('LOJA SUPER BARATÃO'))
 
 precoT = maior1000 = menorpreco = cont = 0
 barato = ' '
@@ -28,12 +26,10 @@ while True:
         status = str(input('Quer Continuar? [S/N]: ')).upper().strip()[0]
     if status == 'N':
         break
-print('-'*20)
-print('FIM DO PROGRAMA')
-print('-'*20)
-print(f'O total da compra foi R$ {precoT}')
+print('{:-^40}'.format('FIM DO PROGRAMA'))
+print(f'O total da compra foi R$ {precoT:.2f}')
 print(f'Temos {maior1000} produto custando mais de R$ 1000.00')
-print(f'O produto mais barato foi {barato} que custa R${menorpreco}')
+print(f'O produto mais barato foi {barato} que custa R${menorpreco:.2f}')
 
 
 
