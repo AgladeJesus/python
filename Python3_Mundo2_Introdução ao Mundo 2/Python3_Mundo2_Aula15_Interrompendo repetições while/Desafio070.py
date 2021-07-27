@@ -11,13 +11,18 @@ while True:
     precoT += preco
     if preco > 1000:
         maior1000 += 1
-    if cont == 1:
+    '''if cont == 1:
         menorpreco = preco
         barato = prod
     else:
         if preco < menorpreco:
             menorpreco = preco
-            barato = prod
+            barato = prod'''
+
+    if cont == 1 or preco < menorpreco:
+        menorpreco = preco
+        barato = prod
+
     status = ' '
     while status not in 'SN':
         status = str(input('Quer Continuar? [S/N]: ')).upper().strip()[0]
