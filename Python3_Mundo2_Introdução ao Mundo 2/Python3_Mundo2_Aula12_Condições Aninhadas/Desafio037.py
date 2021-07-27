@@ -21,7 +21,6 @@ while True:
         print(f'Númenro octal é: {numOct [2:]}')
     else:
         print(f'Númenro Hexadecimal é: {numHex [2:]}')
-        
 print('FIM DO PROGRAMA')
 
 
