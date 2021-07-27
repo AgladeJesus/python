@@ -1,6 +1,6 @@
-print('-='*20)
-print('EMPRÉSTIMO PESSOAL PARA COMPRA DE IMOVÉL')
-print('-='*20)
+print('-='*30)
+print('{:^30}'.format('EMPRÉSTIMO PESSOAL PARA COMPRA DE IMOVÉL')
+print('-='*30)
 
 vlrCasa = float(input('Valor da Casa: '))
 sal = float(input('Qual a renda mensal: '))
