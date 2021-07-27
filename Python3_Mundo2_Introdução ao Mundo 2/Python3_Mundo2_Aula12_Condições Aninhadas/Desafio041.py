@@ -4,7 +4,7 @@ anoNasc = int(input('Ano de nascimento: '))
 anoAtual = date.today().year
 
 idade = anoAtual-anoNasc
-print('O atleta tem {} anos'.format(idade))
+print(f'O atleta tem {idade} anos')
 
 if idade <= 9:
     print('Classificação: MIRIM')
