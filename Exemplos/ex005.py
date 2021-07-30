@@ -72,7 +72,7 @@ while True:
                 print('\n')
             else:
                 # QTDE IGUAL E ABAIXO DE 6000 P/ 1 PALLET, PARA DUAS O.S DISTINTAS.
-                print(f'Qtde de sacolas: {totalPedido}')
+                print(f'Qtde de sacolas: {totalPedido :.0f}')
                 print(f'Qtde de pacotes: {totalPedido / pct :.0f}')
                 print('\n')
         else:
@@ -82,14 +82,14 @@ while True:
                     print('='*20)
                     print('{:^20}'.format('PRIMEIRO PALLET'))
                     print('=' * 20)
-                    print(f'Qtde de sacolas: {totalPedido/2}')
+                    print(f'Qtde de sacolas: {totalPedido/2 :.0f}')
                     print(f'Qtde de pacotes: {(totalPedido/2)/pct :.0f}')
                     print('\n')
 
                     print('='*20)
                     print('{:^20}'.format('SEGUNDO PALLET'))
                     print('=' * 20)
-                    print(f'Qtde de sacolas: {totalPedido / 2}')
+                    print(f'Qtde de sacolas: {totalPedido / 2 :.0f}')
                     print(f'Qtde de pacotes: {(totalPedido / 2) / pct :.0f}')
                     print('\n')
 
@@ -97,14 +97,14 @@ while True:
                     print('=' * 20)
                     print('{:^20}'.format('PRIMEIRO PALLET'))
                     print('=' * 20)
-                    print(f'Qtde de sacolas: {(totalPedido-pct)/2}')
+                    print(f'Qtde de sacolas: {(totalPedido-pct)/2 :.0f}')
                     print(f'Qtde de pacotes: {((totalPedido-pct)/2)/pct :.0f}')
                     print('\n')
 
                     print('=' * 20)
                     print('{:^20}'.format('SEGUNDO PALLET'))
                     print('=' * 20)
-                    print(f'Qtde de sacolas: {((totalPedido - pct)/2)+pct}')
+                    print(f'Qtde de sacolas: {((totalPedido - pct)/2)+pct :.0f}')
                     print(f'Qtde de pacotes: {(((totalPedido - pct)/2)+pct) / pct :.0f}')
                     print('\n')
 
