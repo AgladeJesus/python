@@ -1,6 +1,6 @@
-print('-='*10)
-print('SACOLA SDL')
-print('-='*10)
+print('='*20)
+print('{:^20}'.format('SACOLA SDL'))
+print('='*20)
 
 def tipo_sacola():
         print('''
@@ -32,26 +32,24 @@ def tipo_sacola():
         [20] SL NANO BRANCA SDL
         ''')
 
-pesoPQ = 5.75
-pesoMD = 4.55
-pesoGR = 13.75
-pesoMC = 2.40
-pesoNN = 1.8
-qtdePQ = 100
-qtdeMD = 50
-qtdeGR = 100
-qtdeMC = 100
-qtdeNN = 100
+PQ = 5.75
+MD = 4.55
+GR = 13.75
+MC = 2.40
+NN = 1.8
+pct = 100
 
 qtdTotal = 0
 qtde = 0
+pallet = 0
 
 tipo_sacola()
-print('-='*25)
-print('SOLICITAÇÃO PARA FATURAMENTO')
-print('-='*25)
+print('='*40)
+print('{:^40}'.format('SOLICITAÇÃO PARA FATURAMENTO'))
+print('='*40)
 cliente = str(input('Nome da Loja: '))
-print('-='*25)
+print('='*25)
+
 while True:
     tipo = int(input('Qual modelo de Sacola: '))
     if tipo == 0:
@@ -60,24 +58,34 @@ while True:
         lanç = int(input('São quantas OS´s para esse pallet: '))
         print('SL PEQ PRETA SDL')
         totalPedido = 0
-        qtdePallets = 0
         cont = 0
         while cont < lanç:
             os = int(input('Nº OS: '))
             qtde = int(input('Qtde de sacola: '))
             totalPedido += qtde
-
             cont += 1
+
         if totalPedido <= 6000:
             if lanç == 1:
-                # QTDE DE 6000 PARA BAIXO 1 PALLET, PARA UMA O.S UNICA:
-                print(f'Qtde de pacotes: {totalPedido / qtdePQ :.0f}')
+                # QTDE IGUAL E ABAIXO DE 6000 P/ 1 PALLET, PARA UMA O.S ÚNICA.
+                print(f'Qtde de pacotes: {totalPedido / pct :.0f}')
                 print('\n')
             else:
-                # QTDE DE 6000 PARA BAIXO 1 PALLET, PARA MAIS DE UM O.S:
+                # QTDE IGUAL E ABAIXO DE 6000 P/ 1 PALLET, PARA DUAS O.S DISTINTAS.
                 print(f'Qtde de sacolas: {totalPedido}')
-                print(f'Qtde de pacotes: {totalPedido / qtdePQ :.0f}')
+                print(f'Qtde de pacotes: {totalPedido / pct :.0f}')
                 print('\n')
+        else:
+            if lanç == 1:
+                # QTDE ACIMA DE 6000 P/ 2 PALLETS, PARA UMA O.S ÚNICA.
+                print(f'Qtde de pacotes: {totalPedido / pct :.0f}')
+                print('\n')
+            else:
+                # QTDE ACIMA DE 6000 P/ 2 PALLETS, PARA DUAS O.S DISTINTAS.
+                print(f'Qtde de sacolas: {totalPedido}')
+                print(f'Qtde de pacotes: {totalPedido / pct :.0f}')
+                print('\n')
+
 
     qtdTotal += qtde
 
