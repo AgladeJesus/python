@@ -29,4 +29,4 @@ while True:
         if total == 0:
             break
 print('='*30)
-print('Volte sempre am Banco Agla de Jesus! Tenha um bom dia!')
+print('Volte sempre ao Banco Agla de Jesus! Tenha um bom dia!')
